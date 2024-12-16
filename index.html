@@ -3,64 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Лучший продукт для вас. Качество, надежность и доступная цена!">
-    <title>Ваш продукт мечты</title>
+    <meta name="description" content="Бюро Генпланов: профессиональные услуги в проектировании, градостроительстве и ландшафтной архитектуре.">
+    <title>Генплан Бюро</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Шапка -->
     <header>
         <div class="container">
-            <h1>Продукт Вашей Мечты</h1>
-            <p>Уникальное предложение специально для вас!</p>
-            <a href="#order" class="btn">Купить сейчас</a>
+            <h1>Генплан Бюро</h1>
+            <p>Комплексные решения в проектировании и градостроительстве</p>
+            <a href="#services" class="btn">Наши услуги</a>
         </div>
     </header>
 
-    <!-- Описание продукта -->
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>Что это за продукт?</h2>
-                <p>Наш продукт создан для тех, кто ценит качество, удобство и результат. Он идеально подходит для решения ваших задач.</p>
-                <ul>
-                    <li>Преимущество 1: Высокое качество</li>
-                    <li>Преимущество 2: Доступная цена</li>
-                    <li>Преимущество 3: Быстрая доставка</li>
-                </ul>
-            </div>
-        </section>
+    <!-- О нас -->
+    <section id="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>Мы предоставляем полный спектр услуг в области проектирования и градостроительства. Наш опыт и профессионализм позволяют реализовать проекты любой сложности.</p>
+        </div>
+    </section>
 
-        <!-- Отзывы -->
-        <section id="reviews">
-            <div class="container">
-                <h2>Отзывы наших клиентов</h2>
-                <blockquote>
-                    <p>"Продукт полностью оправдал мои ожидания. Рекомендую всем!"</p>
-                    <cite>&mdash; Иван Иванов</cite>
-                </blockquote>
-                <blockquote>
-                    <p>"Это лучшее, что я покупал за последнее время!"</p>
-                    <cite>&mdash; Анна Петрова</cite>
-                </blockquote>
+    <!-- Услуги -->
+    <section id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Генеральное планирование</h3>
+                    <p>Разработка генеральных планов территорий любой сложности.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Градостроительное проектирование</h3>
+                    <p>Создание проектов планировки территорий и градостроительных концепций.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Ландшафтная архитектура</h3>
+                    <p>Комплексное благоустройство и озеленение территорий.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Форма заказа -->
-        <section id="order">
-            <div class="container">
-                <h2>Сделайте заказ прямо сейчас!</h2>
-                <p>Цена: <strong>999 рублей</strong></p>
-                <a href="tel:+71234567890" class="btn">Позвонить для заказа</a>
-                <a href="mailto:order@example.com" class="btn">Отправить заявку</a>
+    <!-- Портфолио -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Наши проекты</h2>
+            <p>Ознакомьтесь с нашими реализованными проектами:</p>
+            <div class="gallery">
+                <div class="gallery-item"><img src="project1.jpg" alt="Проект 1"></div>
+                <div class="gallery-item"><img src="project2.jpg" alt="Проект 2"></div>
+                <div class="gallery-item"><img src="project3.jpg" alt="Проект 3"></div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Мы готовы ответить на все ваши вопросы и обсудить детали вашего проекта.</p>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </section>
 
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>© 2024 Все права защищены. Свяжитесь с нами: +7 (123) 456-78-90</p>
+            <p>© 2024 Генплан Бюро. Все права защищены.</p>
+            <p>Телефон: +7 (123) 456-78-90 | Email: info@genplan-buro.ru</p>
         </div>
     </footer>
 </body>
