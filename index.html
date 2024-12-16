@@ -3,55 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Бюро Генпланов: профессиональные услуги в проектировании, градостроительстве и ландшафтной архитектуре.">
+    <meta name="description" content="Услуги по разработке проектной документации (ПОС, ППР, ПОР и др.) для строительства">
     <title>Генплан Бюро</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Шапка -->
-    <header>
+    <header class="header">
         <div class="container">
             <h1>Генплан Бюро</h1>
-            <p>Комплексные решения в проектировании и градостроительстве</p>
-            <a href="#services" class="btn">Наши услуги</a>
+            <p>Комплексные решения для строительства</p>
+            <a href="#contact" class="btn">Оставить заявку</a>
         </div>
     </header>
 
-    <!-- О нас -->
-    <section id="about">
-        <div class="container">
-            <h2>О компании</h2>
-            <p>Мы предоставляем полный спектр услуг в области проектирования и градостроительства. Наш опыт и профессионализм позволяют реализовать проекты любой сложности.</p>
-        </div>
-    </section>
-
     <!-- Услуги -->
-    <section id="services">
+    <section id="services" class="services">
         <div class="container">
             <h2>Наши услуги</h2>
-            <div class="service-list">
+            <div class="services-list">
                 <div class="service-item">
-                    <h3>Генеральное планирование</h3>
-                    <p>Разработка генеральных планов территорий любой сложности.</p>
+                    <h3>Разработка ПОС</h3>
+                    <p>Создание проектов организации строительства с учётом всех норм.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Градостроительное проектирование</h3>
-                    <p>Создание проектов планировки территорий и градостроительных концепций.</p>
+                    <h3>ППР</h3>
+                    <p>Подготовка проектной документации для безопасного выполнения работ.</p>
                 </div>
                 <div class="service-item">
-                    <h3>Ландшафтная архитектура</h3>
-                    <p>Комплексное благоустройство и озеленение территорий.</p>
+                    <h3>Технологические карты</h3>
+                    <p>Разработка детализированных карт технологических процессов.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Портфолио -->
-    <section id="portfolio">
+    <!-- Примеры работ -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2>Наши проекты</h2>
-            <p>Ознакомьтесь с нашими реализованными проектами:</p>
-            <div class="gallery">
+            <h2>Примеры проектов</h2>
+            <div class="portfolio-gallery">
                 <div class="gallery-item"><img src="project1.jpg" alt="Проект 1"></div>
                 <div class="gallery-item"><img src="project2.jpg" alt="Проект 2"></div>
                 <div class="gallery-item"><img src="project3.jpg" alt="Проект 3"></div>
@@ -60,30 +51,28 @@
     </section>
 
     <!-- Контакты -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Свяжитесь с нами</h2>
-            <p>Мы готовы ответить на все ваши вопросы и обсудить детали вашего проекта.</p>
-            <form action="#" method="post">
+            <form action="submit-form.php" method="POST">
                 <label for="name">Ваше имя:</label>
                 <input type="text" id="name" name="name" required>
-
+                
                 <label for="email">Ваш email:</label>
                 <input type="email" id="email" name="email" required>
-
-                <label for="message">Сообщение:</label>
+                
+                <label for="message">Ваше сообщение:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-
+                
                 <button type="submit" class="btn">Отправить</button>
             </form>
         </div>
     </section>
 
     <!-- Подвал -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>© 2024 Генплан Бюро. Все права защищены.</p>
-            <p>Телефон: +7 (123) 456-78-90 | Email: info@genplan-buro.ru</p>
         </div>
     </footer>
 </body>
